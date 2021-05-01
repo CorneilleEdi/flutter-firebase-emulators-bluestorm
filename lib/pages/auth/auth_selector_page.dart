@@ -1,9 +1,9 @@
-import 'package:bluestorm/pages/auth/email_auth_page.dart';
-import 'package:bluestorm/pages/home_page.dart';
-import 'package:bluestorm/services/auth_service.dart';
 import 'package:flutter/material.dart';
 
+import '../../services/auth_service.dart';
 import '../../utils//extensions.dart';
+import '../home_page.dart';
+import 'email_auth_page.dart';
 
 class AuthSelectorPage extends StatefulWidget {
   AuthSelectorPage({Key? key}) : super(key: key);
@@ -91,7 +91,7 @@ class _AuthSelectorPageState extends State<AuthSelectorPage> {
                 backgroundColor: Colors.grey.shade900,
               ),
               onPressed: () {
-                Navigator.pushReplacement(
+                Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (context) => EmailAuthPage(),

@@ -1,7 +1,12 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/foundation.dart';
 
 class AuthService {
   late final FirebaseAuth _auth;
+
+  String host = defaultTargetPlatform == TargetPlatform.android
+      ? '10.0.2.2:9054'
+      : 'localhost:9054';
 
   AuthService() {
     FirebaseAuth.instance.useEmulator("http://localhost:9054");
