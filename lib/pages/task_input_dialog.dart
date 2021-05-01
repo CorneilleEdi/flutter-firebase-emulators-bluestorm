@@ -32,9 +32,6 @@ displayDialog({
           TextButton(
             child: Text(
               'Add',
-              style: TextStyle(
-                  color: Theme.of(context).accentColor,
-                  fontWeight: FontWeight.bold),
             ),
             onPressed: () async {
               final message = textEditingController.text;

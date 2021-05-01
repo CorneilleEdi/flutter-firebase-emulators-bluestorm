@@ -80,9 +80,6 @@ class _HomePageState extends State<HomePage> {
             onLongPress: () {},
             title: Text(
               task.title,
-              style: TextStyle(
-                color: Colors.black87,
-              ),
             ),
             trailing: IconButton(
               onPressed: () async {
