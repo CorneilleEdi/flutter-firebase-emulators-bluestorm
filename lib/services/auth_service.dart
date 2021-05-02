@@ -9,7 +9,7 @@ class AuthService {
       : 'localhost:9054';
 
   AuthService() {
-    FirebaseAuth.instance.useEmulator("http://localhost:9054");
+    FirebaseAuth.instance.useEmulator(host);
     _auth = FirebaseAuth.instance;
   }
 
